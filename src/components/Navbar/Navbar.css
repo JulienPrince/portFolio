@@ -13,10 +13,12 @@
   color: white;
 }
 .nabar_image {
+  transition: 350ms;
   height: 60px;
 }
 .nav-menu {
   background-color: #4830e6;
+  transition: 350ms;
   width: 60vw;
   height: 100vh;
   display: flex;
@@ -35,7 +37,7 @@
 .nav-text {
   font-size: 1.2rem;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   padding: 8px 0px 8px 16px;
   list-style: none;
@@ -66,7 +68,7 @@
   width: 100%;
   height: 80px;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -76,9 +78,11 @@
 
 @media (min-width: 991px) {
   .nabar_image {
+    transition: 350ms;
     height: 80px;
   }
   .nav-menu {
+    transition: 350ms;
     width: 50vw;
   }
 }

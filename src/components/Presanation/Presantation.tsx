@@ -41,7 +41,7 @@ const Presantation: React.FC = () => {
                 transform="translate(404.5 709.377) rotate(-90)"
                 fill="none"
                 stroke="#000026"
-                stroke-width="0.8"
+                strokeWidth="0.8"
               />
               <line
                 id="Line_8"
@@ -50,7 +50,7 @@ const Presantation: React.FC = () => {
                 transform="translate(407.524 700.5)"
                 fill="none"
                 stroke="#000026"
-                stroke-width="0.8"
+                strokeWidth="0.8"
               />
             </g>
           </svg>
