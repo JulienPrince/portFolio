@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&family=Tajawal:wght@300;400&display=swap");
+
+.body {
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+.body_title .MuiTypography-h1 {
+  color: #504f4f;
+  transition: 350ms;
+  font-size: 2rem;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 400;
+}
+.body_letf .MuiTypography-h5 {
+  color: #504f4f;
+  transition: 350ms;
+  margin-top: 25px;
+  font-size: 1.3rem;
+  font-family: "Tajawal", sans-serif;
+  margin-bottom: 30px;
+}
+
+.body_letf a {
+  color: #504f4f;
+  text-decoration: none;
+  font-family: "Source Code Pro", monospace;
+}
+
+.image {
+  margin-top: 50px;
+}
+
+.image img {
+  transition: 350ms;
+  width: 250px;
+  margin-left: 40px;
+  z-index: 1;
+}
+
+.shadow {
+  background-image: url("https://thumbs.dreamstime.com/b/illustration-sans-couture-de-vecteur-fond-mod%C3%A8le-d-aspiration-losange-abstrait-noir-ornement-111057433.jpg");
+  width: 200px;
+  height: 350px;
+  margin-top: -320px;
+}
+
+.social {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social a {
+  transition: 350ms;
+  color: #504f4f;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-family: "Source Code Pro", monospace;
+}
+.social a:hover {
+  text-decoration: underline;
+  text-decoration-color: #4830e6;
+}
+
+@media (min-width: 600px) {
+  .body_title .MuiTypography-h1 {
+    font-size: 2.3rem;
+  }
+  .body_letf .MuiTypography-h5 {
+    font-size: 1.5rem;
+  }
+  .image {
+    margin-top: 50px;
+  }
+
+  .image img {
+    width: 400px;
+    margin-left: 120px;
+    z-index: 1;
+  }
+
+  .shadow {
+    width: 400px;
+    height: 550px;
+    margin-left: 80px;
+    margin-top: -520px;
+  }
+
+  .social {
+    margin-top: 50px;
+  }
+
+  .social a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .body_title .MuiTypography-h1 {
+    font-size: 2.2rem;
+  }
+  .body_letf .MuiTypography-h5 {
+    margin-top: 45px;
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+  }
+
+  .body {
+    display: flex;
+    justify-content: space-around;
+  }
+  .social {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: -50px;
+  }
+  .social a {
+    transform: rotate(90deg);
+    font-size: 1.3rem;
+  }
+  .image {
+    order: 3;
+  }
+  .body_letf {
+    order: 2;
+    max-width: 650px;
+  }
+
+  .image img {
+    margin-top: -50px;
+    width: 350px;
+    z-index: 1;
+  }
+
+  .shadow {
+    display: none;
+  }
+
+  .test {
+    order: 4;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 300px;
+    height: 700px;
+    background-color: rgb(172, 172, 172);
+    transition: 550ms;
+  }
+}
+
+@media (min-width: 1100px) {
+  .body_title .MuiTypography-h1 {
+    font-size: 2.5rem;
+  }
+  .body_letf .MuiTypography-h5 {
+    font-size: 1.5rem;
+    margin-bottom: 80px;
+  }
+
+  .social a {
+    font-size: 1.5rem;
+  }
+  .body_letf {
+    order: 2;
+    max-width: 700px;
+  }
+  .image img {
+    width: 400px;
+  }
+
+  .test {
+    width: 380px;
+
+    height: 900px;
+  }
+}
