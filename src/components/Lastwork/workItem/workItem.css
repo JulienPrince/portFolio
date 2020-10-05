@@ -1,0 +1,61 @@
+.wrapper {
+  padding: 0 10px;
+}
+.card {
+  height: 360px;
+  background: #1592e6;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+}
+
+.btn .MuiButton-root {
+  text-transform: lowercase;
+  color: #1592e6;
+}
+
+.btn .MuiButton-outlined {
+  background-color: floralwhite;
+  border: none;
+}
+.btn .MuiButton-outlined:hover {
+  background-color: #1377b9;
+  color: floralwhite;
+}
+.img {
+  object-fit: cover;
+  height: 250px;
+  width: 100%;
+}
+
+.card .MuiTypography-h2 {
+  padding: 5px;
+  color: #fff;
+  font-size: 1.3rem;
+  text-align: center;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 500;
+}
+
+@media (min-width: 780px) {
+  .card .MuiTypography-h2 {
+    font-size: 1.8rem;
+  }
+  .card {
+    width: 320px;
+  }
+  .wrapper {
+    padding: 1%;
+  }
+}

@@ -3,22 +3,30 @@ import { Typography } from "@material-ui/core";
 import "./presantation.css";
 import { Link } from "react-router-dom";
 import Profil from "../../asset/Profile.jpg";
+import Typed from "react-typed";
+
+const Type1 = (
+  <Typed
+    strings={["Prince Julien, ", "A votre service. "]}
+    typeSpeed={60}
+    backSpeed={30}
+  />
+);
 
 const Presantation: React.FC = () => {
   return (
     <div className="body">
       <div className="body_letf">
         <div className="body_title">
-          <Typography variant="h1">Julien Prince, Freelance</Typography>
+          <Typography variant="h1">{Type1}</Typography>
           <div>
-            <Typography variant="h1">Web Développeur</Typography>
+            <Typography variant="h1">Développeur Web </Typography>
           </div>
         </div>
         <Typography variant="h5">
           Bonjour, Mon nom c'est Prince, concepteur de sites Web indépendant.
-          J'ai 2 ans d'expérience dans l'industrie du développement. Je me suis
-          spécialisé dans React Js et Nest Js. Vous pouvez consulter mon travail
-          ci-dessous.
+          Sûr de mon expérience dans l'industrie du développement. Vous pouvez
+          consulter mon travail ci-dessous.
         </Typography>
         <div>
           <Link to="#"> Scroll Down</Link>
@@ -56,15 +64,14 @@ const Presantation: React.FC = () => {
           </svg>
         </div>
       </div>
-      <div className="image">
+      <div className="div-image">
         <img src={Profil} alt="profile" />
-        <div className="shadow"></div>
       </div>
       <div className="social">
         <Link to="#"> LinkedIn</Link>
         <Link to="#">Facebook</Link>
       </div>
-      <div className="test"></div>
+      <div className="right"></div>
     </div>
   );
 };

@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
       <div className="nabar">
         <img className="nabar_image" src={logo} alt="logo" />
         <IconButton onClick={showSidebar}>
-          <MenuIcon style={{ fontSize: "80px" }} />
+          <MenuIcon style={{ fontSize: "50px", color: "#707070" }} />
         </IconButton>
       </div>
       <nav className={sidebar ? "nav-menu active" : "nav-menu"}>

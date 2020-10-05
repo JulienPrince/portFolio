@@ -26,12 +26,13 @@
   position: fixed;
   top: 0;
   right: -200%;
-  transition: 850ms;
+  transition: 950ms;
+  z-index: 100;
 }
 
 .nav-menu.active {
   right: 0;
-  transition: 350ms;
+  transition: 650ms;
 }
 
 .nav-text {
@@ -76,7 +77,7 @@
   color: #f5f5f5;
 }
 
-@media (min-width: 991px) {
+@media (min-width: 780px) {
   .nabar_image {
     transition: 350ms;
     height: 80px;
@@ -84,5 +85,8 @@
   .nav-menu {
     transition: 350ms;
     width: 50vw;
+  }
+  .nav-menu.active {
+    transition: 650ms;
   }
 }
