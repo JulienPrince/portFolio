@@ -1,0 +1,48 @@
+.experiance_main {
+  margin-top: 20px;
+  height: 300px;
+  background: rgb(109, 109, 109);
+  box-shadow: 2px 2px 20px rgb(163, 163, 163);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experiance_main .MuiTypography-root {
+  font-family: "Roboto Mono", monospace;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+.experiance_left {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.experiance_center {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.experiance_rigth {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 900px) {
+  .experiance_main {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .experiance_main .MuiTypography-root {
+    font-size: 25px;
+  }
+}
