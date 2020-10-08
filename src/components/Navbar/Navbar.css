@@ -20,7 +20,7 @@
   background-color: #4830e6;
   transition: 350ms;
   width: 60vw;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   position: fixed;
@@ -83,8 +83,8 @@
     height: 80px;
   }
   .nav-menu {
-    transition: 350ms;
-    width: 50vw;
+    transition: 650ms;
+    width: 20vw;
   }
   .nav-menu.active {
     transition: 650ms;

@@ -42,15 +42,16 @@
 }
 
 .social a {
-  transition: 350ms;
   color: #504f4f;
   font-size: 1.2rem;
   text-decoration: none;
   font-family: "Source Code Pro", monospace;
 }
-.social a:hover {
-  text-decoration: underline;
-  text-decoration-color: #4830e6;
+.linkeding:hover {
+  color: #0073b1;
+}
+.facebook:hover {
+  color: #129cf7;
 }
 
 @media (min-width: 780px) {
@@ -59,6 +60,9 @@
     transition: all 0.3s ease-in-out;
   }
 
+  .social a {
+    padding: 20px;
+  }
   .body_letf {
     width: 720px;
   }

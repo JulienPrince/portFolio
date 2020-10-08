@@ -11,10 +11,14 @@ const WorkItem: React.FC<InfoProps> = ({ img, title }) => {
     <>
       <div className="wrapper">
         <div className="card">
-          <img src={img} alt="projet" className="img" />
-          <Typography variant="h2">{title}</Typography>
-          <div className="btn">
-            <Button variant="outlined">nfos</Button>
+          <div className="box">
+            <div className="content">
+              <img src={img} alt="projet" className="img" />
+              <Typography variant="h2">{title}</Typography>
+              <div className="btn">
+                <Button variant="outlined">infos</Button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

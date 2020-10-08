@@ -2,17 +2,7 @@ import { Button, Typography } from "@material-ui/core";
 import React from "react";
 import "./lastwork.css";
 import WorkItem from "./workItem/workItem";
-import { project1, project2 } from "./data";
-import { InfoProps } from "./workItem/workItem";
-
-const InfoProps1: InfoProps = {
-  title: project1.title,
-  img: project1.img,
-};
-const InfoProps2: InfoProps = {
-  title: project2.title,
-  img: project2.img,
-};
+import { projects } from "./data";
 
 const Lastwork: React.FC = () => {
   return (
@@ -24,9 +14,9 @@ const Lastwork: React.FC = () => {
         </Typography>
       </div>
       <div className="container">
-        <WorkItem {...InfoProps1} />
-        <WorkItem {...InfoProps2} />
-        <WorkItem {...InfoProps1} />
+        {projects.map((project, index) => (
+          <WorkItem key={index} {...project} />
+        ))}
       </div>
       <div className="div-btn">
         <Button variant="outlined" size="large">

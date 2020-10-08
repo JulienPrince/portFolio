@@ -68,8 +68,13 @@ const Presantation: React.FC = () => {
         <img src={Profil} alt="profile" />
       </div>
       <div className="social">
-        <Link to="#"> LinkedIn</Link>
-        <Link to="#">Facebook</Link>
+        <Link to="#" className="linkeding">
+          {" "}
+          LinkedIn
+        </Link>
+        <Link to="#" className="facebook">
+          Facebook
+        </Link>
       </div>
       <div className="right"></div>
     </div>
